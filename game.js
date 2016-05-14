@@ -1,6 +1,6 @@
 var app = {};
 
-function startApp(){
+function startApp() {
   app.canvas = document.getElementById('canvas');
   app.context = canvas.getContext('2d');
 
@@ -24,7 +24,7 @@ function startApp(){
   spawnHero();
   spawnRocks();
 
-  app.canvas.addEventListener('mousemove', myMouseMove, false);
+  app.canvas.addEventListener('mousemove', myMouseMove, true);
   app.lastTime = window.performance.now();
   window.requestAnimationFrame(frameUpdate);
 
@@ -66,7 +66,7 @@ function drawScene(){
   var context = app.context;
 
   context.fillStyle = "#000";
-  context.fillRect(0,0,canvas.width, canvas.height);
+  context.fillRect(0, 0, canvas.width, canvas.height);
 
 app.hero.drawMe(context);
 for (var i = 0; i < app.rocks.length; i++){
@@ -110,7 +110,7 @@ function spawnRock(){
     x: Math.random() * app.canvas.width,
       y: Math.random() * -app.canvas.height},
     size: 120,
-    speed: 150 +25 * app.difficulty,
+    speed: 150 + 25 * app.difficulty,
       color: "#FFFFFF",
       image:  app.rockImage,
       drawMe: function(context) {

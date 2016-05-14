@@ -1,26 +1,28 @@
 <html>
-<head>
-  <title>Astrofinity by XiFi Labs</title>
-  <!-- Main CSS -->
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <!-- Normalize -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
-  <!-- Bootstrap (Included for Glyphicon access) -->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-</head>
+  <head>
+    <title>Astrofinity by XiFi Labs</title>
+    <!-- CSS -->
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="w3.css">
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <!-- JavaScript -->
+    <script type="text/javascript" src="game.js"></script>
+  </head>
   <body id="background" onload="startApp()">
   	<!-- Navbar -->
-  	<div id="navbar">
-  		<p class="pull-left">Astrofinity is an Asteroid clone by XiFi Labs</p>
-  		<p class="pull-right">Built in Atlanta with</p>
+  	<div id="navbar" class="w3-container">
+  		<p class="w3-left">Astrofinity is an Asteroid clone by <a id="xifi" href="http://xdotjs.com" target="_blank">XiFi Labs</a></p>
+  		<p class="w3-right">Built in Atlanta with <i class="fa fa-heart w3-medium"></i></p>
   	</div>
-  	<!-- Game Container -->
-  	<div id="game-container">
-  		<canvas id="canvas" width="768" height="512"></canvas>
-  	</div>
-  	<!-- jQuery -->
-  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  	<!-- Main JavaScript -->
-    <script type="text/javascript" src="game.js"></script>
+    <div class="w3-container w3-pale-green w3-leftbar w3-border-green">
+      <p><b>Instructions:</b> Use your mouse to pilot ship and avoid the asteroids! Press 'F5' to restart.</p>
+    </div>
+    <div class="w3-container">
+      <div class="w3-row">
+        <canvas id="canvas" width="768" height="512"></canvas>
+      </div>
+    </div>
   </body>
 </html>

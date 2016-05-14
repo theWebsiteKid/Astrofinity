@@ -1,0 +1,28 @@
+body {
+	background: #000;
+}
+
+#navbar {
+	color: #FFF;
+	background-color: #000;
+}
+
+#xifi {
+	text-decoration: none;
+	color: #FFF;
+}
+
+#gameArea {
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+#canvas {
+	float: left;
+}
